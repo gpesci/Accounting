@@ -2,8 +2,9 @@
   "servers": {
     "filesystem": {
       "type": "stdio",
-      "command": "mcp-server-filesystem.cmd",
+      "command": "node",
       "args": [
+        "C:\\Users\\g.pesci\\AppData\\Roaming\\npm\\node_modules\\@modelcontextprotocol\\server-filesystem\\dist\\index.js",
         "C:\\Users\\g.pesci\\OneDrive - iSolutions s.r.l\\fatture"
       ]
     },
