@@ -32,7 +32,7 @@ YYYY-MM-DD_<Fornitore>_<NumeroFattura>.<ext>
 
 **Esempi:**
 - `123_ClienteABC.pdf`   → Fattura Attiva
-- `2026-04-20_FR_FornitoreXYZ_INV-0891.pdf`  → Fattura Passiva
+- `2026-04-20_FornitoreXYZ_INV-0891.pdf`  → Fattura Passiva
 
 
 ### Regole di archiviazione
