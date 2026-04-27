@@ -21,20 +21,17 @@ Questa skill guida GitHub Copilot nelle attività operative legate alla fatturaz
 ### Convenzione di nomenclatura
 
 ```
-YYYY-MM-DD_<TipoFattura>_<Cliente/Fornitore>_<NumeroFattura>.<ext>
+Fatture Passiva:
+YYYY-MM-DD_<Fornitore>_<NumeroFattura>.<ext>
+
+Fatture Attive:
+<NumeroFattura>_<Nome Cliente>
 ```
 
 **Esempi:**
-- `2026-04-15_FE_ClienteABC_F2026-042.pdf`   → Fattura Emessa
-- `2026-04-20_FR_FornitoreXYZ_INV-0891.pdf`  → Fattura Ricevuta
+- `123_ClienteABC.pdf`   → Fattura Attiva
+- `2026-04-20_FR_FornitoreXYZ_INV-0891.pdf`  → Fattura Passiva
 
-**Legenda prefissi:**
-| Prefisso | Significato |
-|----------|-------------|
-| `FE`     | Fattura Emessa |
-| `FR`     | Fattura Ricevuta |
-| `NC`     | Nota di Credito |
-| `PA`     | Fattura verso Pubblica Amministrazione |
 
 ### Regole di archiviazione
 
