@@ -20,11 +20,13 @@ Questa skill guida GitHub Copilot nelle attività operative legate alla fatturaz
 
 ### Convenzione di nomenclatura
 
+**Fatture Passive:**
 ```
-Fatture Passiva:
 YYYY-MM-DD_<Fornitore>_<NumeroFattura>.<ext>
+```
 
-Fatture Attive:
+**Fatture Attive:**
+```
 <NumeroFattura>_<Nome Cliente>
 ```
 
