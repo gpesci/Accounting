@@ -101,7 +101,7 @@ Best regards,
 | Segnaposto | Fonte |
 |---|---|
 | `<NumeroFattura>` | Campo `numero_fattura` dello statement |
-| `<NomeAzienda>` | Ragione sociale mittente |
+| `<NomeCliente>` | Ragione sociale mittente |
 | `<MeseEmissione>` | Mese e anno di emissione (es. `April 2026`) | |
 | `<DataScadenza>` | Campo `data_scadenza` (formato `DD/MM/YYYY`) |
 | `<NumeroFatturaScaduta>` | Campo `numero_fattura` dello statement per ogni riga che presenta lo stato 'scaduto'|
