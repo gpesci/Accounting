@@ -1,0 +1,30 @@
+{
+  "servers": {
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "${input:fatture_path}"
+      ]
+    },
+    "ms365": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@softeria/ms-365-mcp-server",
+        "--org-mode"
+      ]
+    }
+  },
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "fatture_path",
+      "description": "Percorso locale della cartella fatture (es. C:\\Users\\nome\\OneDrive\\fatture)",
+      "password": false
+    }
+  ]
+}
