@@ -78,24 +78,22 @@ Il file di riferimento è `/report/statement_clienti.xlsx` (o `.csv`) con le seg
 ### Struttura della mail
 
 ```
-Oggetto: Fattura n. <NumeroFattura> – <NomeAzienda> – <MeseAnno>
+Oggetto: iSolutions' invoice <NumeroFattura> – <NomeCliente> 
 
-Gentile <Nome Referente>,
+Dear Customer,
 
-in allegato trovi la fattura n. <NumeroFattura> del <DataEmissione>
-relativa a <descrizione servizio/fornitura> per un importo totale di € <ImportoTotale> (IVA inclusa).
+find attached the invoice no. <NumeroFattura> for the month of <MeseEmissione>, due on <DataScadenza>.
 
-La data di scadenza per il pagamento è il <DataScadenza>.
+We would also to take this opportunity to share with you the statement of issued invoices.
+According to our records these are the invoices still outstanding:
+•	<NumeroFatturaScaduta>
+..
 
-Coordinate bancarie per il bonifico:
-  Intestatario: <RagioneSociale>
-  IBAN: <IBAN>
-  Causale: Fattura n. <NumeroFattura>
+For any further information, please do not hesitate to contact us.
 
-Per qualsiasi informazione rimango a disposizione.
+Best regards,
 
-Cordiali saluti,
-<Firma>
+
 ```
 
 ### Variabili da sostituire
@@ -104,18 +102,14 @@ Cordiali saluti,
 |---|---|
 | `<NumeroFattura>` | Campo `numero_fattura` dello statement |
 | `<NomeAzienda>` | Ragione sociale mittente |
-| `<MeseAnno>` | Mese e anno di emissione (es. `Aprile 2026`) |
-| `<Nome Referente>` | Contatto del cliente |
-| `<DataEmissione>` | Campo `data_emissione` (formato `DD/MM/YYYY`) |
-| `<ImportoTotale>` | Campo `importo_totale` dello statement |
+| `<MeseEmissione>` | Mese e anno di emissione (es. `April 2026`) | |
 | `<DataScadenza>` | Campo `data_scadenza` (formato `DD/MM/YYYY`) |
-| `<RagioneSociale>` | Ragione sociale mittente |
-| `<IBAN>` | IBAN aziendale |
-| `<Firma>` | Firma standard del mittente |
+| `<NumeroFatturaScaduta>` | Campo `numero_fattura` dello statement per ogni riga che presenta lo stato 'scaduto'|
+
 
 ### Regole per la mail
 
 - Allega sempre il PDF della fattura nella versione definitiva.
-- Usa sempre la formula di cortesia `Gentile` (non `Spettabile` per le mail).
+- Usa sempre la formula di cortesia `Dear Customer'.
 - Se la fattura sostituisce una nota di credito, menzionarlo esplicitamente nel corpo.
 - Invia in CC il responsabile amministrativo interno.
