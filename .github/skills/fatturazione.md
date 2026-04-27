@@ -9,11 +9,11 @@ Questa skill guida GitHub Copilot nelle attività operative legate alla fatturaz
 ### Struttura cartelle
 
 ```
-/fatture/
-  emesse/
+/Fatturazione attiva/
+  Fatture Attive PDF/
     YYYY/
       MM/
-  ricevute/
+/Fatturazione passiva/
     YYYY/
       MM/
 ```
